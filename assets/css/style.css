@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Base Navbar Styles */
+.navbar {
+    width: 100%;
+    background-color: black;
+    padding: 8px 20px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #FFD700;
+}
+
+.nav-container {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo Styling */
+.nav-logo {
+    color: #FFD700;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #FFD700;
+}
+
+/* Mobile Menu */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: black;
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        border-top: 2px solid #FFD700;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+
+
+/* Flex container for title and icon */
+.title-container {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+
+/* Icon Styling */
+.roti-icon {
+    width: 60px;
+    height: 60px;
+}
+
+/* Header stays at the top */
+h1 {
+    font-size: clamp(2rem, 5vw, 4rem);
+    color: #FFD700;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+/* Content container for vertical centering */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    /* Pushes content down while keeping header at top */
+}
+
+p {
+    font-size: clamp(0.95rem, 3vw, 1.3rem);
+    color: #ddd;
+    margin-bottom: 8px;
+}
+
+img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+    /* position: absolute; */
+    margin: 20px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.twitter-link {
+    margin: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+
+.twitter-link a {
+    color: rgb(0, 108, 196);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.twitter-link a:hover {
+    text-decoration: underline;
+}
+
+
+.license {
+    padding: 40px;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    /* font-weight: bold; */
+}
+
+.license a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.license a:hover {
+    text-decoration: underline;
+}
+
+.license img {
+    height: 18px !important;
+    margin-left: 3px;
+    vertical-align: middle;
+}
