@@ -82,6 +82,12 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .nav-logo {
+        color: #FFD700;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
     .nav-links {
         display: none;
         flex-direction: column;
