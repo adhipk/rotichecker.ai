@@ -20,7 +20,7 @@ body {
 .navbar {
     width: 100%;
     background-color: black;
-    padding: 8px 20px;
+    padding: 8px 10px;
     display: flex;
     justify-content: center;
     position: fixed;
@@ -31,7 +31,7 @@ body {
 }
 
 .nav-container {
-    width: 90%;
+    width: 95%;
     max-width: 1200px;
     display: flex;
     justify-content: space-between;
